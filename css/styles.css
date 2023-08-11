@@ -1,0 +1,624 @@
+/* 
+======================================== 
+START Style Guide 
+======================================== 
+*/
+
+:root {
+    /* 
+    ========================================  
+    COLORS
+    ========================================  
+    */
+    --crl-primary-brand: #4D5AE5;
+    /* Iris| Primary Brand | CTAs,Focused,Active states,Links */
+
+    --crl-pressed-state: #404BBF;
+    /* OCEAN | Pressed state |CTAs */
+
+    --crl-dark: #2E2F42;
+    /* Navy blue | Dark | Overlays,Shadows,Headings */
+
+    --crl-success: #31D0AA;
+    /* GREEN | Success | Valid fields, Success messages */
+
+    --crl-text: #434455;
+    /* SLATE| Text | Body text */
+
+    --crl-subtle-text: #8E8F99;
+    /* LIGHT SLATE | Subtle Text | Helper text, Deemphasized text  */
+
+    --crl-accent: #E7E9FC;
+    /* Cornflower | Accent | Accent color, Hairlines, Subtle backgrounds */
+
+    --crl-light: #F4F4FD;
+    /*CLOUD | Light | Light mode backgrounds, Light mode Dialogs/alerts */
+
+    --crl-modal-overlay: #2E2F42;
+    /* NAVY BLUE modal | Modal overlay | Overlay */
+
+    --crl-hero-background: #2E2F42;
+    /* GREY | Hero background | Hero image background */
+
+    --crl-white-background: #FFFFFF;
+    /* WHITE|  White background | Header,  team card background */
+
+    --crl-modal-background: #FCFCFC;
+    /* Dairy| Modal background | Modal background  */
+
+    /* 
+    ======================================== 
+    TYPOGRAPHY 
+    ========================================   
+    */
+    /* ========== ========== Body | Main text | p ========== ========== */
+    --body-font-family: "Roboto", sans-serif;
+    --body-font-size: 16px;
+    --body-font-weight: 400;
+    --body-line-height: 1.5;
+    --body-letter-spacing: .02em;
+
+    /* ========== ========== Header 1 | title-hero| h1 ========== ========== */
+    --h1-font-size: 56px;
+    --h1-line-height: 1.07;
+    --h1-letter-spacing: .02em;
+
+    /* ========== ========== Header 2 | title | h2 ========== ========== */
+    --h2-font-size: 36px;
+    --h2-line-height: 1.11;
+    --h2-letter-spacing: .02em;
+
+    /* ========== ========== Header 3 | subtitle | h3 ========== ========== */
+    --h3-font-weight: 500;
+    --h3-font-size: 20px;
+    --h3-line-height: 1.2;
+    --h3-letter-spacing: .02em;
+
+    /* ========== ========== Small Text ========== ========== */
+    --small-font-size: 12px;
+    --small-font-weight: 400;
+    --small-line-height: 1.17;
+    --small-letter-spacing: .04em;
+
+
+    /* ========== ========== Body Medium ========== ========== */
+    --body-medium-font-size: 16px;
+    --body-medium-font-weight: 500;
+    --body-medium-line-height: 1.5;
+    --body-medium-letter-spacing: .02em;
+
+    /* ========== ========== Button Text ========== ========== */
+    --button-font-family: "Roboto", sans-serif;
+    --button-font-size: 16px;
+    --button-font-weight: 500;
+    --button-line-height: 1.5;
+    --button-letter-spacing: .04em;
+
+    /* ========== ========== Link Text ========== ========== */
+    --link-font-size: 12px;
+    --link-font-weight: 400;
+    --link-line-height: 1.33;
+    --link-letter-spacing: .04em;
+
+    /* ========== ========== Logo ==========  ========== */
+    --logo-font-family: "Raleway", sans-serif;
+    --logo-font-size: 18px;
+    --logo-font-weight: 800;
+    --logo-line-height: 1.17;
+    --logo-letter-spacing: .03em;
+}
+
+/*
+======================================== 
+End Style Guide 
+======================================== 
+*/
+
+/* ======================================== Reset values ========================================  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-block: 0;
+}
+
+/* img,
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* ======================================== General tag selector values ========================================  */
+
+body {
+    font-family: var(--body-font-family, "Roboto", sans-serif);
+    font-size: var(--body-font-size, 16px);
+    letter-spacing: var(--body-letter-spacing, 0.02em);
+    line-height: 1.5;
+
+    color: var(--crl-text, #434455);
+    background-color: var(--crl-white-background);
+}
+
+address {
+    font-style: normal;
+}
+
+/* ======================================== General helper classes ========================================  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1158px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.link {
+    text-decoration-line: none;
+    color: var(--crl-text, #434455);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.main-title {
+    font-size: var(--h1-font-size, 56px);
+    line-height: var(--h1-line-height, 1.07);
+    /* letter-spacing: var(--h1-letter-spacing, 0.02em); */
+}
+
+.title {
+    margin-bottom: 72px;
+    text-align: center;
+
+    font-size: var(--h2-font-size, 36px);
+    line-height: var(--h2-line-height, 1.11);
+    /* letter-spacing: var(--h2-letter-spacing, 0.02em); */
+
+    color: var(--crl-dark, #2E2F42);
+
+    text-transform: capitalize;
+}
+
+.subtitle {
+    margin-bottom: 8px;
+
+    font-size: var(--h3-font-size, 20px);
+    font-weight: var(--h3-font-weight, 500);
+    line-height: var(--h3-line-height, 1.2);
+    /* letter-spacing: var(--h3-letter-spacing, 0.02em); */
+    color: var(--crl-dark, #2E2F42);
+}
+
+
+.image {
+    display: block;
+    max-width: 100%;
+}
+
+.btn {
+    /* font-family: var(--button-font-family, "Roboto", sans-serif); */
+    /* font-size: var(--button-font-size, 16px); */
+    font-weight: var(--button-font-weight, 500);
+    /* line-height: var(--button-line-height, 1.5); */
+    letter-spacing: var(--button-letter-spacing, 0.04em);
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.icon {
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+
+}
+
+/* 
+================================================================================ 
+------------------------------ HEADER | SECTION 1 ------------------------------
+================================================================================  
+*/
+
+/* ================================= Header =================================== */
+
+.main-header {
+    display: flex;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================== Logo ==================================== */
+.logo {
+    font-family: var(--logo-font-family, "Raleway", sans-serif);
+    font-size: var(--logo-font-size, 18px);
+    font-weight: var(--logo-font-weight, 800);
+    line-height: var(--logo-line-height, 1.17);
+    letter-spacing: var(--logo-letter-spacing, 0.03em);
+
+    color: var(--crl-primary-brand, #4D5AE5);
+
+    text-transform: uppercase;
+}
+
+.header-logo {
+    margin-right: 72px;
+}
+
+.logo-dark {
+    color: var(--crl-dark, #2E2F42);
+}
+
+.logo-light {
+    color: var(--crl-light, #F4F4FD);
+}
+
+/* ========================== Main header navigation ============================= */
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-list {
+    height: 72px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    padding: 24px 0;
+    color: var(--crl-dark, #2E2F42);
+    font-weight: var(--body-medium-font-weight, 500);
+}
+
+/* 
+.nav-link:hover,
+.nav-link:focus{ 
+padding-bottom: 20px;
+border-bottom: 4px solid #404BBF;
+border-radius: 2px;
+} */
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: var(--crl-pressed-state, #404BBF);
+    border-radius: 2px;
+}
+
+
+/* ========================== Contacts header ================================= */
+.contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-link {
+    display: block;
+    padding: 24px 0;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--crl-pressed-state, #404BBF);
+}
+
+
+/*
+================================================================================ 
+------------------------------- MAIN CONTENT STYLES ----------------------------
+================================================================================ 
+*/
+
+/* 
+================================================================================ 
+                                 Hero | SECTION 2
+================================================================================  
+*/
+
+.section-hero {
+    height: 600px;
+    padding: 188px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--crl-dark, #2E2F42);
+    /* background-image: linear-gradient(to bottom, (rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70))),
+    url(https://images/01-studio/02-hero/bg-hero-people-office.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+/* 
+.hero-img {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70) rgba(46, 47, 66, 0.70));
+} */
+
+.hero-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+}
+
+.hero-title {
+    max-width: 496px;
+    color: var(--crl-white-background, #FFFFFF);
+    text-align: center;
+}
+
+.hero-btn {
+    min-width: 169px;
+    padding: 16px 32px;
+    color: var(--crl-white-background, #FFFFFF);
+    background-color: var(--crl-primary-brand, #4D5AE5);
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--crl-pressed-state, #404BBF);
+}
+
+/* 
+================================================================================ 
+                                Benefit | SECTION 3 
+================================================================================  
+*/
+
+.section-benefit {
+    padding: 120px 0;
+}
+
+.benefit-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.benefit-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.benefit-box-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    
+}
+
+/* 
+================================================================================ 
+                        What are we doing| Skills | SECTION 4 
+================================================================================  
+*/
+
+.section-skills {
+    padding-bottom: 120px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.skills-list-item {
+    flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+/* 
+================================================================================ 
+                             Our Team| Team | SECTION 5  
+================================================================================  
+*/
+
+.section-team {
+    padding: 120px 0;
+    background: var(--crl-light, #F4F4FD);
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.team-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+
+    background-color: var(--crl-white-background, #FFFFFF);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.text-content-box {
+    padding: 32px 0;
+    text-align: center;
+}
+/* 
+================================================================================ 
+                                Customers | SECTION 6 
+================================================================================  
+*/
+
+.section-customers {
+    padding: 120px 0;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.customers-list-item {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+}
+
+.customers-box-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    
+}
+
+/* 
+================================================================================ 
+                             Footer | SECTION 7  
+================================================================================  
+*/
+
+.main-footer {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--crl-dark, #2E2F42);
+    padding: 100px 0;
+}
+
+.main-footer-link {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.main-footer-text {
+    max-width: 264px;
+    color: var(--crl-light, #F4F4FD);
+}
+
+
+/* 
+================================================================================ 
+                             Social media |   
+================================================================================  
+*/
+.social-media-box-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    
+}
+
+.social-media-list {
+    display: flex ;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.social-media-list-item {
+
+width: 40px;
+height: 40px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+/*
+================================================================================ 
+------------------------------------- PORTFOLIO --------------------------------
+================================================================================ 
+*/
+/* ============================ Portfolio | SECTION 2 ========================== */
+
+.portfolio-section {
+    padding: 96px 0 120px 0;
+    justify-content: space-between;
+}
+
+/* ================= Filter | Portfolio secondary navigation =================== */
+.portfolio-filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+
+    border: 1px solid var(--crl-accent, #e7e9fc);
+    color: var(--crl-primary-brand, #4D5AE5);
+    background-color: var(--crl-light, #F4F4FD);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    border: 1px solid transparent;
+    color: var(--crl-white-background, #FFFFFF);
+    background-color: var(--crl-pressed-state, #404BBF);
+}
+
+/* ========================= Cards | Portfolio cards ============================= */
+.portfolio-text-container {
+    padding: 32px 16px;
+    border: 1px solid var(--crl-accent, #e7e9fc);
+    border-top: none;
+}
+
+.portfolio-card-list {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    justify-content: space-between;
+}
+
+.card-list-item {
+    width: calc((100% - 48px) / 3);
+    background: var(--crl-white-background, #FFFFFF);
+}
+
+.card-list-item:hover,
+.card-list-item:focus {
+
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}

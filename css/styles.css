@@ -512,6 +512,7 @@ url(../images/01-studio/02-hero/bg-hero-people-office.jpg)
     margin-bottom: 8px;
     background-color: #F4F4FD;
     border-radius: 4px;
+    
 
 }
 
@@ -670,5 +671,11 @@ url(../images/01-studio/02-hero/bg-hero-people-office.jpg)
 }
 
 .social-media-icon{
-    fill:var(--crl-light,#F4F4FD);
+    fill:#F4F4FD;
+}
+.customers-icon{
+    fill:#8E8F99;
+    border:1px solid #8E8F99;
+    border-radius: 4px;
+    
 }

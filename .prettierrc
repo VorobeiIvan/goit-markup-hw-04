@@ -11,6 +11,10 @@
     "proseWrap": "always",
     
     "htmlWhitespaceSensitivity": "ignore", 
-    "doctypeLowerCase": true
+    "doctypeLowerCase": true,
+
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapLineLength": 0,
+    "html.format.wrapAttributesIndentSize": 4
   }
   

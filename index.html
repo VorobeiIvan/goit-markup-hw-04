@@ -497,11 +497,12 @@ START Main content
           </li>
           <!-- block 5 -->
           <li class="customers-list-item">
-            <div class="customers-box-svg">
-              <svg class="icon customers-icon" width="168" height="88">
-                <use href="./images/icons.svg#icon-logo4"></use>
-              </svg>
-            </div>
+            <a class="customers-link" href="">
+              <div class="customers-box-svg">
+                <svg class="icon customers-icon" width="168" height="88">
+                  <use href="./images/icons.svg#icon-logo4"></use>
+                </svg>
+              </div>
             </a>
           </li>
           <!-- block 6 -->
@@ -609,20 +610,15 @@ END Footer | SECTION 7
 ========================================
 -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="close-btn" data-modal-close>
-      <svg
-        class="close-btn-icon"
-        width="28"
-        height="28"
-        aria-label="Modal window close icon"
-      >
-        <use href="./images/icons.svg#icon-modal-close"></use>
-      </svg>
-    </button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="close-btn-icon" width="28" height="28" aria-label="Modal window close icon">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
-</div>
 
 
   <!-- #endregion 
@@ -631,7 +627,7 @@ END Footer | SECTION 7
 ========================================
 -->
 
-<script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

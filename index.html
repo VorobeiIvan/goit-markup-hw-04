@@ -89,7 +89,7 @@ START Main content
 
       <div class="hero-box container">
         <h1 class="hero-title main-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn btn" type="button">Order Service</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Order Service </button>
       </div>
     </section>
     <!-- #endregion 
@@ -551,7 +551,7 @@ START Footer | SECTION 7
     <div class="footer-social-media-box">
       <h2 class="footer-subtitle subtitle">Social media</h2>
       <!-- ---------- Social media  ---------- -->
-      <ul class="social-media-list list">
+      <ul class="footer-social-media-list list">
         <!-- ---------- instagram ---------- -->
         <li class="social-media-item">
           <a class="social-media-link link" href="">
@@ -601,6 +601,37 @@ START Footer | SECTION 7
 END Footer | SECTION 7
 ========================================
 -->
+
+
+  <!-- #region 
+======================================== 
+    START BACKDROP WITH MODAL WINDOW  
+========================================
+-->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close>
+      <svg
+        class="close-btn-icon"
+        width="28"
+        height="28"
+        aria-label="Modal window close icon"
+      >
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- #endregion 
+======================================== 
+     END BACKDROP WITH MODAL WINDOW  
+========================================
+-->
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>

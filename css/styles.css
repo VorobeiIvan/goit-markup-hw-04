@@ -228,7 +228,8 @@ address {
     border-radius: 4px;
     cursor: pointer;
 }
-.section{   
+
+.section {
     width: 1440px;
     margin-inline: auto;
 
@@ -514,20 +515,23 @@ url(../images/01-studio/02-hero/bg-hero-people-office.jpg)
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    border:1px solid #8E8F99;
+    border: 1px solid #8E8F99;
     border-radius: 4px;
 }
-.customers-icon{
-    fill:#8E8F99;
+
+.customers-icon {
+    fill: #8E8F99;
 }
+
 .customers-icon:hover,
-.customers-icon:focus{
-    fill:#404BBF;
+.customers-icon:focus {
+    fill: #404BBF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 .customers-box-svg:hover,
-.customers-box-svg:focus{
-    border-color:#404BBF;
+.customers-box-svg:focus {
+    border-color: #404BBF;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -539,78 +543,52 @@ url(../images/01-studio/02-hero/bg-hero-people-office.jpg)
 
 .main-footer {
     display: flex;
+
     background: var(--crl-dark, #2E2F42);
     padding: 100px 0;
 }
-
-
-.main-footer-text {
+.mf-text-content-box{
+    margin-left: 156px;
+    margin-right: 120px;
+}
+.footer-social-media-box {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    color: var(--crl-white-background);
+    font-size: var(--body-medium-font-size, 16px);
+    font-weight: var(--body-medium-font-weight, 500);
+}
+
+.footer-subtitle {
+    color: var(--crl-light, #F4F4FD);
+}
+
+.footer-social-media-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.main-footer-text {
+    margin-top: 18px;
     max-width: 264px;
     color: var(--crl-light, #F4F4FD);
 }
 
-.footer-subtitle { 
-    color: var(--crl-light, #F4F4FD);
-}
-.footer-social-media-box{
-display: flex;
-flex-direction: column;
-color: var(--crl-white-background);
-font-weight: var(--body-medium-font-size, 16px);
-font-weight: var(--body-medium-font-weight, 500);
-}
 
-.main-footer {
-    display: flex;
-    justify-content: space-around;
-}
-.mf-text-content-box {
-}
-.main-footer-link {
-}
-.link {
-}
-.logo {
-}
-.logo-light {
-}
-.main-footer-text {
-}
-.footer-social-media-box {
-}
-.footer-subtitle {
-}
-.subtitle {
-}
-.social-media-list {
-}
-.list {
-}
-.social-media-item {
-}
-.social-media-link {
-}
-.social-media-box {
-}
-.icon {
-}
-.social-media-icon {
-}
 /* 
 ================================================================================ 
                              Social media |   
 ================================================================================  
 */
-.social-media-list{
+.social-media-list {
     display: flex;
-    gap:24px;
+    gap: 24px;
     margin-top: 8px;
     margin-left: 16px;
     margin-right: 16px;
 }
+
 .social-media-box {
     display: flex;
     align-items: center;
@@ -622,15 +600,16 @@ font-weight: var(--body-medium-font-weight, 500);
 }
 
 .social-media-box:hover,
-.social-media-box:focus{
+.social-media-box:focus {
     background-color: var(--crl-pressed-state, #404BBF);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.social-media-icon{
-    fill:#F4F4FD;
+.social-media-icon {
+    fill: #F4F4FD;
 }
+
 /*
 ================================================================================ 
 ------------------------------------- PORTFOLIO --------------------------------
@@ -684,6 +663,7 @@ font-weight: var(--body-medium-font-weight, 500);
 }
 
 .card-list-item {
+    
     width: calc((100% - 48px) / 3);
     background: var(--crl-white-background, #FFFFFF);
 }
@@ -694,4 +674,96 @@ font-weight: var(--body-medium-font-weight, 500);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.portfolio-card-link{
+    position: relative;
+    
+}
+
+/* ========================= Overlay in Cards | Portfolio cards ============================= */
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+   
+    height: calc(100% - 28.57%);
+    background: var(--crl-primary-brand, #4D5AE5);
+    
+}
+.card-list-item:hover .overlay ,
+.card-list-item:focus .overlay  {     
+    opacity:1;
+    visibility:visible ;
+    pointer-events:painted;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-text {
+    width: 296px;
+    padding-top: 40px;
+    color: var(--crl-light, #F4F4FD);
+}
+
+
+/*
+================================================================================ 
+                            BACKDROP WITH MODAL WINDOW  
+================================================================================ 
+*/
+/* ================ BACKDROP ================ */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ================ MODAL WINDOW ================ */
+.modal {
+    position: absolute;
+    top:80px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 999;
+
+
+    width: 408px;
+    height: 584px;
+
+    border-radius: 4px;
+    background: var(--dairy, #FCFCFC);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+}
+.close-btn{
+    position: absolute;
+    z-index: 2;
+    top:24px;
+    right:24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+.close-btn-icon {
+    fill: var(--cornflower, #E7E9FC);
+    stroke: rgba(0, 0, 0, 0.10);
+  }
+
+
 

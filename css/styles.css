@@ -215,6 +215,7 @@ address {
 
 .image,
 svg {
+    
     display: block;
     max-width: 100%;
 }
@@ -233,8 +234,8 @@ svg {
 .section {
     max-width: 1440px;
     margin-inline: auto;
-
 }
+.icon{fill: currentColor;}
 
 
 /* 
@@ -304,6 +305,7 @@ svg {
     color: #404bbf;
     /* color: var(--crl-dark, #2E2F42); */
     font-weight: var(--body-medium-font-weight, 500);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover::after,
@@ -319,6 +321,10 @@ svg {
     border-radius: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
 
 /* 
 .nav-link:hover,
@@ -347,6 +353,7 @@ border-radius: 2px;
 }
 
 .contact-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     padding: 24px 0;
 }
@@ -515,13 +522,14 @@ border-radius: 2px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .customers-list-item {
     /* flex-basis: calc((100% - 5 * 24px) / 6); */
     width: calc((100% - 120px) / 6);
     height:88px; 
-    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .customers-box-svg {
@@ -640,6 +648,10 @@ border-radius: 2px;
     margin-left: 16px;
     margin-right: 16px;
 }
+.social-media-item{
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
 
 .social-media-box {
     display: flex;
@@ -842,15 +854,14 @@ border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    
     position: absolute;
     z-index: 2;
     top: 24px;
     right: 24px;
-    background-color: transparent;
+    /* background-color: transparent;
     border: none;
     padding: 0;
-    line-height: 0;
+    line-height: 0;  */
 }
 
 .close-btn:hover,

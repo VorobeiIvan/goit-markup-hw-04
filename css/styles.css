@@ -288,7 +288,7 @@ svg {
 }
 
 .nav-link {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
@@ -298,6 +298,11 @@ svg {
 
     font-weight: var(--body-medium-font-weight, 500);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.active{
+    position: relative;
+    color: #404BBF;
 }
 
 .nav-link:hover::after,

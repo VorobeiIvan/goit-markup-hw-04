@@ -178,7 +178,7 @@ address {
 .main-title {
     font-size: var(--h1-font-size, 56px);
     line-height: var(--h1-line-height, 1.07);
- 
+
 }
 
 .title {
@@ -187,7 +187,7 @@ address {
 
     font-size: var(--h2-font-size, 36px);
     line-height: var(--h2-line-height, 1.11);
- 
+
 
     color: var(--crl-dark, #2E2F42);
 
@@ -207,16 +207,16 @@ address {
 
 .image,
 svg {
-    
+
     display: block;
     max-width: 100%;
 }
 
 .btn {
     font-family: inherit;
-   
+
     font-weight: var(--button-font-weight, 500);
-   
+
     letter-spacing: var(--button-letter-spacing, 0.04em);
 
     border-radius: 4px;
@@ -227,7 +227,10 @@ svg {
     max-width: 1440px;
     margin-inline: auto;
 }
-.icon{fill: currentColor;}
+
+.icon {
+    fill: currentColor;
+}
 
 
 /* 
@@ -300,7 +303,9 @@ svg {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.active{
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
     position: relative;
     color: #404BBF;
 }
@@ -336,7 +341,7 @@ svg {
 .contact-link:focus {
 
     color: var(--crl-pressed-state, #404BBF);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -470,7 +475,7 @@ svg {
 
 .team-list-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--crl-white-background, #FFFFFF);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -496,14 +501,14 @@ svg {
     display: flex;
     justify-content: center;
     gap: 24px;
-    
+
 }
 
 .customers-list-item {
 
     width: calc((100% - 120px) / 6);
-    height:88px; 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    height: 88px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-box-svg {
@@ -516,22 +521,23 @@ svg {
 }
 
 
-.customers-link{
+.customers-link {
     width: 100%;
     height: 100%;
     border: 1px solid #8e8f99;
-    border-radius:4px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #8e8f99;
-    transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .customers-link:hover,
-.customers-link:focus{
-    border-color: #404bbf; 
-    color: #404bbf; 
+.customers-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
 }
 
 /* 
@@ -539,14 +545,15 @@ svg {
                              Footer | SECTION 7  
 ================================================================================  
 */
-.footer-container{
+.footer-container {
     display: flex;
     align-items: baseline;
-    
+
 
 }
+
 .main-footer {
-    
+
     background: var(--crl-dark, #2E2F42);
     padding: 100px 0;
 }
@@ -570,14 +577,14 @@ svg {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:#ffffff;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
 .footer-social-media-list {
     display: flex;
     gap: 16px;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-footer-text {
@@ -585,12 +592,13 @@ svg {
     max-width: 264px;
     color: var(--crl-light, #F4F4FD);
 }
-.social-media-link.footer{
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+
+.social-media-link.footer {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .social-media-link:hover.footer,
-.social-media-link:focus.footer{
+.social-media-link:focus.footer {
     background-color: #31d0aa;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -613,11 +621,12 @@ svg {
 
 
 }
-.social-media-item{
+
+.social-media-item {
     width: 40px;
     height: 40px;
-   
-   
+
+
 }
 
 
@@ -641,22 +650,24 @@ svg {
 .social-media-icon {
     fill: #F4F4FD;
 }
+
 .social-media-link {
     width: 100%;
     height: 100%;
-    background-color:#4d5ae5;
-    border-radius:50%;
-    display: flex; 
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
-  
 
-  
+
+
 }
+
 .social-media-link:hover,
 .social-media-link:focus {
     background-color: #404bbf;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*
@@ -673,22 +684,25 @@ svg {
 
 /* ================= Filter | Portfolio secondary navigation =================== */
 .portfolio-filter-list {
-    
+
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-   
+
 }
-.filter-list-item{transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+.filter-list-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .filter-btn {
     padding: 12px 24px;
 
     border: 1px solid var(--crl-accent, #e7e9fc);
     color: var(--crl-primary-brand, #4D5AE5);
     background-color: var(--crl-light, #F4F4FD);
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -698,7 +712,7 @@ svg {
     background-color: var(--crl-pressed-state, #404BBF);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ========================= Cards | Portfolio cards ============================= */
@@ -729,21 +743,20 @@ svg {
 
     display: block;
     position: relative;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .portfolio-card-link:hover,
-.portfolio-card-link:focus 
-{
-   
-    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+.portfolio-card-link:focus {
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-card-link:hover .overlay-text,
-.portfolio-card-link:focus .overlay-text
-{
-    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+.portfolio-card-link:focus .overlay-text {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     opacity: 1;
     visibility: visible;
     pointer-events: painted;
@@ -752,9 +765,9 @@ svg {
 
 }
 
-.container-card-img{
-    position: relative; 
-    overflow: hidden; 
+.container-card-img {
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -762,18 +775,18 @@ svg {
 
 .overlay-text {
     position: absolute;
-    top: 0; 
+    top: 0;
     font-size: 16px;
-    line-height: 1.5; 
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color:#f4f4fd;
+    color: #f4f4fd;
     padding: 40px 32px;
     background-color: #4d5ae5;
     height: 100%;
     width: 100%;
-    transform: translateY(100%); 
+    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+
 }
 
 
@@ -808,7 +821,7 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 999;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 408px;
     min-height: 584px;
@@ -820,29 +833,29 @@ svg {
 }
 
 .close-btn {
-    padding: 0; 
-    width: 24px; 
+    padding: 0;
+    width: 24px;
     height: 24px;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    background-color: #e7e9fc; 
+    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     z-index: 2;
     top: 24px;
     right: 24px;
- 
+
 }
 
 .close-btn:hover,
-.close-btn:focus{
+.close-btn:focus {
     border: none;
-    background-color: #404bbf; 
-  
+    background-color: #404bbf;
+
     fill: #ffffff;
 }
 
@@ -850,7 +863,8 @@ svg {
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    .close-btn-icon:hover,
-    .close-btn-icon:focus {
-        fill: #ffffff;
-    }
+
+.close-btn-icon:hover,
+.close-btn-icon:focus {
+    fill: #ffffff;
+}
